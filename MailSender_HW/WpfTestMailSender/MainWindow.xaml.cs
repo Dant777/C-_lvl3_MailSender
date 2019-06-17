@@ -47,8 +47,8 @@ namespace WpfTestMailSender
             mailMessage.Body = txtBody.Text;
             //server
             server.Address = "smtp.yandex.ru";
-            server.UserName = "vl.kolbt87@yandex.ru";
-            server.Password = "";
+            server.UserName = txtLoginUser.Text;
+            server.Password = txtPasswordUser.Password;
 
             var emailSend = new EmailSendServiceClass(senderUser.Name, senderUser.Address, recipient.Name, recipient.Address);
             emailSend.CreateMailMessage(mailMessage.Subject, mailMessage.Body);

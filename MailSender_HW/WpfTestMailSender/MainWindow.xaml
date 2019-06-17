@@ -14,24 +14,30 @@
         <TabControl>
             <TabItem Header="Почта">
                 <Grid>
-                    <TextBox x:Name="txtSenderAddress"  HorizontalAlignment="Left" Height="23" Margin="45,30,0,0" TextWrapping="Wrap" Text="vl.kolbt87@yandex.ru" VerticalAlignment="Top" Width="252"/>
-                    <TextBox x:Name="txtSenderName" HorizontalAlignment="Left" Height="23" Margin="45,78,0,0" TextWrapping="Wrap" Text="Name 1" VerticalAlignment="Top" Width="252"/>
-                    <TextBox x:Name="txtRecipientAddress" HorizontalAlignment="Left" Height="23" Margin="400,30,0,0" TextWrapping="Wrap" Text="kolbt87@gmail.com" VerticalAlignment="Top" Width="252"/>
-                    <TextBox x:Name="txtRecipientName" HorizontalAlignment="Left" Height="23" Margin="400,78,0,0" TextWrapping="Wrap" Text="Name 2" VerticalAlignment="Top" Width="252"/>
-                    <TextBox x:Name="txtObject" HorizontalAlignment="Left" Height="23" Margin="45,130,0,0" TextWrapping="Wrap" Text="Тема письма" VerticalAlignment="Top" Width="607"/>
-                    <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="141" Margin="45,180,0,0" TextWrapping="Wrap" Text="Text Text Text Text Text Text" VerticalAlignment="Top" Width="607"/>
-        
+                    <TextBox x:Name="txtSenderAddress"  HorizontalAlignment="Left" Height="23" Margin="328,30,0,0" TextWrapping="Wrap" Text="....@yandex.ru" VerticalAlignment="Top" Width="175"/>
+                    <TextBox x:Name="txtSenderName" HorizontalAlignment="Left" Height="23" Margin="328,78,0,0" TextWrapping="Wrap" Text="Name 1" VerticalAlignment="Top" Width="176"/>
+                    <TextBox x:Name="txtRecipientAddress" HorizontalAlignment="Left" Height="23" Margin="560,30,0,0" TextWrapping="Wrap" Text="....@gmail.com" VerticalAlignment="Top" Width="186"/>
+                    <TextBox x:Name="txtRecipientName" HorizontalAlignment="Left" Height="23" Margin="560,78,0,0" TextWrapping="Wrap" Text="Name 2" VerticalAlignment="Top" Width="186"/>
+                    <TextBox x:Name="txtObject" HorizontalAlignment="Left" Height="23" Margin="45,130,0,0" TextWrapping="Wrap" Text="Тема письма" VerticalAlignment="Top" Width="701"/>
+                    <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="141" Margin="45,180,0,0" TextWrapping="Wrap" Text="Text Text Text Text Text Text" VerticalAlignment="Top" Width="701"/>
+                    <TextBox x:Name="txtLoginUser"  HorizontalAlignment="Left" Height="23" Margin="45,30,0,0" TextWrapping="Wrap" Text="....@yandex.ru" VerticalAlignment="Top" Width="175"/>
+
+                    <PasswordBox x:Name="txtPasswordUser" Margin="45,78,566,262"/>
+
                     <Button x:Name="btnSendMail" Click="BtnSendMail_Click"  Content="Отправить" Margin="356,326,340,0" />
-                    
-                    <Label Content="Адрес отправителя:" HorizontalAlignment="Left" Margin="45,5,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Имя отправителя:" HorizontalAlignment="Left" Margin="45,53,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Адрес получателя:" HorizontalAlignment="Left" Margin="400,5,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Тема письма:" HorizontalAlignment="Left" Margin="400,53,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Имя получателя:" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top"/>
+
+                    <Label Content="Адрес отправителя:" HorizontalAlignment="Left" Margin="328,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.042,-1.404"/>
+                    <Label Content="Имя отправителя:" HorizontalAlignment="Left" Margin="328,52,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Адрес получателя:" HorizontalAlignment="Left" Margin="560,4,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Имя получателя:" HorizontalAlignment="Left" Margin="560,53,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Password:" HorizontalAlignment="Left" Margin="45,52,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Login:" HorizontalAlignment="Left" Margin="45,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.042,-1.404"/>
+                    <Label Content="Тема:" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top"/>
                     <Label Content="Текст письма:" HorizontalAlignment="Left" Margin="45,153,0,0" VerticalAlignment="Top"/>
                 </Grid>
 
             </TabItem>
+
 
         </TabControl>
     </DockPanel>
